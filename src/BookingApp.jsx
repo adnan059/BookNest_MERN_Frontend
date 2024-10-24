@@ -6,7 +6,7 @@ import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import Login from "./pages/Login";
 import Register from "./pages/Register";
-import PublicRoute from "./components/publicRoute";
+import PublicRoute from "./components/PublicRoute";
 import AdminRoute from "./components/AdminRoute";
 import Admin from "./pages/adminPages/Admin";
 

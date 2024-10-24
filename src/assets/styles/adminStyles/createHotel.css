@@ -1,0 +1,114 @@
+.createHotel {
+  min-height: calc(100vh - 300px);
+  padding-inline: 1.6rem;
+  padding-block: 5rem;
+}
+.createHotel h2 {
+  color: var(--mainColor);
+}
+
+.createHotelContainer {
+  max-width: 1024px;
+  margin-inline: auto;
+  width: 100%;
+}
+
+.createHotelForm .formContainer {
+  width: 100%;
+  margin-top: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 2rem;
+  margin-inline: auto;
+}
+
+.createHotelForm .formContainer > div {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  width: 100%;
+}
+
+.createHotelForm .inputField .MuiOutlinedInput-root,
+.createHotel .MuiFormControl-root {
+  font-size: 1.6rem;
+  width: 100%;
+  display: block;
+}
+
+.createHotelForm .inputField label {
+  font-size: 1.6rem;
+  color: var(--mainColor);
+}
+
+.createHotelForm .inputField .MuiOutlinedInput-root.Mui-focused fieldset {
+  border-color: var(--mainColor);
+}
+
+.createHotelForm .inputField .MuiFormHelperText-root {
+  color: red;
+  font-size: 1.6rem;
+}
+
+.createHotel .MuiFormControl-root legend {
+  font-size: 1.7rem;
+  color: var(--mainColor);
+}
+
+.featuredRadioOption .MuiSvgIcon-root {
+  font-size: 2.2rem;
+  color: var(--mainColor);
+}
+
+.featuredRadioLabel .MuiFormControlLabel-label {
+  font-size: 1.7rem;
+  color: var(--mainColor);
+}
+
+.createHotelForm .imgUpload {
+  display: flex;
+  justify-content: flex-start;
+  gap: 2rem;
+  align-items: center;
+}
+
+.createHotel .imgUpload > span:nth-of-type(1) {
+  font-size: 1.7rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  border: 1px solid #b4b4b4;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+.createHotel .imgUpload > span:nth-of-type(1) > * {
+  cursor: pointer;
+}
+.createHotelForm .previewImg > img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid var(--mainColor);
+}
+
+.createHotelForm button {
+  display: block;
+  background-color: var(--mainColor);
+  padding: 10px 20px;
+  font-weight: bold;
+  font-size: 1.8rem;
+  color: var(--grayColor);
+  margin-inline: auto;
+  margin-top: 3rem;
+}
+
+/* -------- media queries ----------- */
+
+@media (max-width: 550px) {
+  .createHotelForm .formContainer {
+    flex-direction: column;
+  }
+}

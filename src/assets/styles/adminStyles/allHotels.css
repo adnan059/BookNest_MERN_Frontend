@@ -1,0 +1,47 @@
+.allHotels {
+  max-width: 1024px;
+  width: 100%;
+  margin-inline: auto;
+  margin-top: 4rem;
+}
+
+.allHotels .hotelsHeader {
+  display: flex;
+  justify-content: space-between;
+}
+.allHotels .hotelsHeader h2 {
+  color: var(--mainColor);
+}
+
+.allHotels .hotelsHeader button {
+  background-color: var(--mainColor);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  padding: 0.8rem 1rem;
+  color: var(--grayColor);
+  font-weight: bold;
+  font-size: 1.6rem;
+}
+
+.allHotels .hotelsHeader button > i {
+  color: var(--grayColor);
+}
+
+.allHotels .adminUserActions button {
+  cursor: pointer;
+  font-size: 2rem;
+}
+
+.allHotels .adminUserActions button:nth-of-type(1) {
+  color: rgb(8, 113, 250);
+}
+
+.allHotels .adminUserActions button:nth-of-type(2) {
+  color: red;
+}
+
+.allHotels .city {
+  text-transform: capitalize;
+}

@@ -1,0 +1,16 @@
+.allUsers {
+  max-width: 1024px;
+  width: 100%;
+  margin-inline: auto;
+  margin-top: 4rem;
+}
+
+.allUsers > h2 {
+  color: var(--mainColor);
+}
+
+.allUsers i {
+  color: red;
+  cursor: pointer;
+  font-size: 2rem;
+}

@@ -1,0 +1,20 @@
+.list {
+  padding: 1.6rem;
+  margin-top: 10rem;
+}
+
+.listContainer {
+  max-width: 1024px;
+  width: 100%;
+  margin-inline: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+@media (max-width: 850px) {
+  .list {
+    margin-top: 15rem;
+  }
+}

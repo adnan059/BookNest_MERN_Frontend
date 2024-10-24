@@ -1,0 +1,18 @@
+.adminHomeContainer {
+  min-height: calc(100vh - 300px);
+}
+
+.MuiButtonBase-root.MuiTab-root {
+  color: var(--mainColor);
+  font-size: 1.8rem;
+  font-weight: bold;
+  font-family: Arial, sans-serif;
+  text-transform: capitalize;
+}
+
+.MuiButtonBase-root.MuiTab-root.Mui-selected {
+  font-family: Arial, sans-serif;
+  color: var(--secColor);
+  /* border-bottom: 3px solid var(--secColor); */
+  background-color: var(--mainColor);
+}

@@ -1,0 +1,21 @@
+.home {
+  padding: 1.6rem;
+}
+
+.homeContainer {
+  padding-top: 10rem;
+  max-width: 1024px;
+  width: 100%;
+  margin-inline: auto;
+}
+
+.homeTitle {
+  margin-block: 5rem 3rem;
+  color: var(--mainColor);
+}
+
+@media (max-width: 850px) {
+  .homeContainer {
+    padding-top: 15rem;
+  }
+}

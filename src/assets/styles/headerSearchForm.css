@@ -1,0 +1,160 @@
+.headerFormContainer {
+  max-width: 1024px;
+  width: 100%;
+  margin-inline: auto;
+  margin-bottom: -15.5rem;
+  margin-top: 5rem;
+  padding: 2rem 0;
+  border: 1px solid var(--mainColor);
+
+  border-radius: 15px;
+  background-color: var(--grayColor);
+}
+
+.headerSearchForm {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  gap: 2rem;
+  align-items: center;
+  padding: 1rem 1.2rem;
+}
+
+.headerSearchForm > div {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.headerSearchItem {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 8px;
+  position: relative;
+}
+
+.headerSearchItem .headerSearchText {
+  cursor: pointer;
+  background-color: var(--secColor);
+  padding: 0.5rem 0.8rem;
+  border-radius: 10px;
+  color: #666;
+  font-size: 1.4rem;
+  border: 1px solid var(--mainColor);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 300px;
+}
+.headerSearchItem span i {
+  margin-left: 8px;
+}
+
+.headerSearchItem i {
+  font-size: 2rem;
+  color: var(--mainColor);
+}
+
+input.headerSearchInput {
+  border: 1px solid var(--mainColor);
+  padding: 0.5rem 0.8rem;
+  font-size: 1.5rem;
+  border-radius: 10px;
+  color: #333;
+  background-color: var(--secColor);
+  width: 300px;
+}
+
+input.headerSearchInput::placeholder {
+  font-size: 1.4rem;
+}
+
+.headerSearchItem .options {
+  position: absolute;
+  top: 40px;
+  background-color: var(--secColor);
+  max-width: 300px;
+  width: 100%;
+  padding: 1rem 1.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.5);
+  z-index: 100;
+}
+
+.headerSearchItem .options .optionItem {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1.5rem;
+  color: var(--mainColor);
+}
+
+.headerSearchItem .options .optionItem .optionCounter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.headerSearchItem .options .optionItem .optionCounter button {
+  padding: 4px 8px;
+  font-size: 1.4rem;
+  font-weight: bold;
+  color: var(--mainColor);
+  background-color: var(--grayColor);
+  border: 1px solid var(--mainColor);
+}
+
+.headerBtn {
+  display: inline-block;
+  padding: 0.8rem 1.2rem;
+  font-size: 1.5rem;
+  background-color: var(--mainColor);
+  font-weight: 600;
+  color: var(--grayColor);
+  transition: 0.3s;
+  margin-inline: auto;
+  cursor: pointer;
+}
+
+.headerBtn:hover {
+  transform: scale(1.04);
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.5);
+}
+
+.dateRange {
+  position: absolute;
+  top: 40px;
+  z-index: 100;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.5);
+}
+
+@media (max-width: 850px) {
+  .headerSearchForm {
+    flex-direction: column;
+    gap: 2rem;
+  }
+  .headerFormContainer {
+    margin-bottom: -18rem;
+  }
+}
+
+@media (max-width: 400px) {
+  input.headerSearchInput {
+    width: 200px;
+  }
+
+  .headerSearchItem .headerSearchText {
+    width: 200px;
+  }
+
+  .dateRange {
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}

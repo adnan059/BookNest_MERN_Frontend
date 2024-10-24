@@ -1,0 +1,59 @@
+.roomsByHotel {
+  padding-inline: 1.6rem;
+  margin-block: 3rem;
+  min-height: calc(100vh - 300px);
+}
+
+.roomsByHotel .roomsByHotelContainer {
+  max-width: 1024px;
+  width: 100%;
+  margin-inline: auto;
+}
+
+.roomCardContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+  flex-wrap: wrap;
+}
+
+.roomBox {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  background-color: var(--grayColor);
+  padding: 1.5rem;
+  border: 10px solid var(--secColor);
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.3);
+}
+
+.roomBox h3 {
+  color: var(--mainColor);
+  margin-bottom: 1rem;
+}
+
+.roomBox p {
+  font-size: 1.5rem;
+  color: #333;
+}
+
+.roomBox .btns {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+  margin-top: 1rem;
+}
+
+.roomBox .btns button {
+  font-size: 2rem;
+}
+
+.roomBox .btns button:nth-of-type(1) {
+  color: dodgerblue;
+}
+
+.roomBox .btns button:nth-of-type(2) {
+  color: red;
+}

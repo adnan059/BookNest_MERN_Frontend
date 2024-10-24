@@ -1,0 +1,34 @@
+.allRooms {
+  max-width: 1024px;
+  width: 100%;
+  margin-inline: auto;
+  margin-top: 4rem;
+}
+
+.allRooms > h2 {
+  color: var(--mainColor);
+}
+
+.allRooms .adminRoomActions {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.allRooms .adminRoomActions button {
+  display: flex;
+  background-color: transparent;
+  align-items: center;
+  gap: 0.6rem;
+  color: var(--mainColor);
+  font-size: 1.6rem;
+}
+
+.allRooms .adminRoomActions button i {
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+.allRooms .adminRoomActions button i {
+  color: rgb(0, 110, 255);
+}

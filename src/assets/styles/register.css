@@ -1,0 +1,119 @@
+.regFormContainer {
+  min-height: calc(100vh - 300px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  flex-direction: column;
+  padding-inline: 1.6rem;
+}
+
+.regFormContainer > h3 {
+  text-align: center;
+  font-size: 3.2rem;
+  color: var(--mainColor);
+}
+
+.regForm {
+  background-color: var(--grayColor);
+  margin-block: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 1.4rem;
+  max-width: 450px;
+  width: 100%;
+  margin-inline: auto;
+  padding: 2rem;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.3);
+}
+
+.regForm input {
+  padding: 0.5rem 1rem;
+  font-size: 1.6rem;
+  max-width: 100%;
+  display: block;
+  width: 100%;
+  border: 1px solid #666;
+}
+
+.regForm > div {
+  max-width: 100%;
+
+  width: 100%;
+}
+
+.regForm div.stdropdown-input.stsearch-box {
+  padding: 0.5rem 1rem;
+  font-size: 1.6rem;
+  max-width: 450px;
+  width: 100%;
+  border: 1px solid #666;
+}
+
+div.stdropdown-container {
+  border: none;
+}
+
+.regForm input[data-error="true"] {
+  border: 1px solid red;
+}
+
+.regForm .error-msg {
+  color: red;
+}
+
+.regForm .userImgUpload {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #666;
+  padding: 0.5rem 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  gap: 3rem;
+}
+
+.regForm .userImgUpload > * {
+  cursor: pointer;
+}
+
+.regForm .userImgUpload i {
+  margin-right: 1rem;
+}
+
+.regForm .previewImg {
+  width: 50px;
+  height: 50px;
+  border-radius: 100%;
+  object-fit: cover;
+  border: 1px solid var(--mainColor);
+}
+
+.regForm .reg-btn {
+  display: inline-block;
+  padding: 0.8rem 1.2rem;
+  font-size: 1.5rem;
+  background-color: var(--mainColor);
+  font-weight: 600;
+  color: var(--grayColor);
+}
+
+.regForm .reg-btn:disabled {
+  cursor: progress;
+}
+
+.regFormContainer > p {
+  font-size: 1.7rem;
+}
+
+.regFormContainer > p:first-of-type {
+  color: red;
+  margin-bottom: 1rem;
+}
+
+.regFormContainer > p > a {
+  color: blue;
+  text-decoration: underline;
+}

@@ -1,0 +1,42 @@
+.navbar {
+  background-color: var(--mainColor);
+  display: flex;
+  justify-content: center;
+  padding: 1.6rem;
+}
+
+.navContainer {
+  width: 100%;
+  max-width: 1024px;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.navContainer .logo {
+  font-weight: 800;
+  font-size: var(--logoFS);
+}
+
+.navContainer .logo span {
+  color: var(--secColor);
+}
+
+.navItems .navButton {
+  display: inline-block;
+  padding: 0.8rem 1rem;
+  font-size: 1.4rem;
+  color: var(--mainColor);
+  font-weight: 600;
+  background-color: var(--grayColor);
+}
+
+.usernameBtn,
+.dashboardBtn {
+  margin-right: 1rem;
+  color: var(--mainColor);
+  background-color: var(--grayColor);
+  padding: 0.8rem 1rem;
+  font-weight: 600;
+  font-size: 1.4rem;
+}

@@ -1,0 +1,72 @@
+.loginFormContainer {
+  max-width: 1024px;
+  width: 100%;
+  margin-inline: auto;
+  min-height: calc(100vh - 300px);
+  padding-inline: 1.6rem;
+  padding-block: 5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.loginFormContainer > h3 {
+  text-align: center;
+  font-size: 3.2rem;
+  color: var(--mainColor);
+}
+
+.loginFormContainer > p {
+  text-align: center;
+}
+
+.loginForm {
+  background-color: var(--grayColor);
+  margin-block: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 1.4rem;
+  max-width: 450px;
+  width: 100%;
+  margin-inline: auto;
+  padding: 2rem;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.3);
+}
+
+.loginForm input {
+  padding: 0.5rem 1rem;
+  font-size: 1.6rem;
+  max-width: 100%;
+  display: block;
+  width: 100%;
+  border: 1px solid #666;
+}
+
+.loginForm input[data-error="true"] {
+  border: 1px solid red;
+}
+
+.loginForm .error-msg {
+  color: red;
+}
+
+.loginForm .login-btn {
+  display: inline-block;
+  padding: 0.8rem 1.2rem;
+  font-size: 1.5rem;
+  background-color: var(--mainColor);
+  font-weight: 600;
+  color: var(--grayColor);
+}
+
+.loginForm .login-btn:disabled {
+  cursor: progress;
+}
+
+.loginFormContainer > p > a {
+  color: blue;
+  text-decoration: underline;
+}

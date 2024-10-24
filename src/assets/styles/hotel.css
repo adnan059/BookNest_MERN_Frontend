@@ -1,0 +1,166 @@
+.hotelContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+  padding: 1.6rem;
+  min-height: calc(100vh - 300px);
+}
+
+.hotelWrapper {
+  width: 100%;
+  max-width: 1024px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  position: relative;
+}
+
+.hotelTitle {
+  font-size: 2.4rem;
+  color: var(--mainColor);
+  text-transform: capitalize;
+}
+
+.hotelAddress {
+  font-size: 1.2rem;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  color: #666;
+}
+
+.hotelDistance {
+  color: #333;
+  font-weight: 500;
+  font-size: 1.5rem;
+}
+
+.hotelPriceHighlight {
+  color: #008009;
+  font-weight: 500;
+  font-size: 1.5rem;
+}
+
+.hotelImages {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.hotelImgWrapper {
+  width: 33%;
+}
+
+.hotelImg {
+  width: 100%;
+  object-fit: cover;
+  cursor: pointer;
+}
+
+.hotelDetails {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  margin-top: 20px;
+  color: #333;
+  line-height: 1.5;
+}
+
+.hotelDetailsTexts {
+  flex: 3;
+}
+
+.hotelDesc {
+  font-size: 1.4rem;
+  margin-top: 20px;
+}
+
+.hotelDetailsPrice {
+  flex: 1;
+  background-color: var(--secColor);
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.hotelDetailsPrice > h1 {
+  font-size: 1.8rem;
+  color: var(--mainColor);
+}
+.hotelDetailsPrice > span {
+  font-size: 1.4rem;
+}
+.hotelDetailsPrice > h2 {
+  font-weight: 300;
+  color: var(--mainColor);
+}
+.hotelDetailsPrice > button {
+  border: none;
+  padding: 10px 20px;
+  background-color: var(--mainColor);
+  color: var(--grayColor);
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.slider {
+  max-width: 1024px;
+  width: 100%;
+  margin-inline: auto;
+  position: sticky;
+  top: 100px;
+  left: 0;
+  right: 0;
+
+  z-index: 999;
+  display: flex;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.404);
+  margin-bottom: 3rem;
+}
+
+.sliderWrapper {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+}
+
+.slideImg {
+  width: 100%;
+}
+
+.closeSliderIcon {
+  position: absolute;
+  top: -15px;
+  right: -15px;
+  font-size: 4rem;
+  color: var(--mainColor);
+  border: 2px solid var(--mainColor);
+  background-color: var(--secColor);
+  padding: 5px 10px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.slider .arrow {
+  font-size: 4rem;
+  cursor: pointer;
+  color: var(--mainColor);
+  position: absolute;
+  background-color: var(--secColor);
+  padding: 0.4rem;
+  border: 2px solid var(--mainColor);
+}
+
+.slider .leftArrow {
+  left: -10px;
+}
+
+.slider .rightArrow {
+  right: -10px;
+}

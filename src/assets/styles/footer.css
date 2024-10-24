@@ -1,0 +1,28 @@
+.footer {
+  padding-block: 4rem;
+  background-color: var(--secColor);
+  padding-inline: 1.6rem;
+}
+.footerContainer {
+  font-size: 14px;
+  max-width: 1024px;
+  width: 100%;
+  margin-inline: auto;
+}
+
+.fLists {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.fList {
+  list-style: none;
+  padding: 0;
+}
+
+.fListItem {
+  margin-bottom: 10px;
+  color: var(--mainColor);
+  cursor: pointer;
+}
